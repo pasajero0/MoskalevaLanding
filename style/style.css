@@ -1,0 +1,129 @@
+@font-face {
+	font-family: Corinthia;
+	src: url(../fonts/Corinthia.ttf);
+}
+/*-----------------------------------------common*/
+body {
+	font-family: 'Playfair Display', serif;
+}
+section {
+	padding-top: 100px;
+	padding-bottom: 70px;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.btn-container {
+	display: flex;
+	justify-content: center;
+}
+.btn {
+	display: inline-block;
+	padding: 20px 43px;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 700;
+	text-decoration: none;
+	background: #cddc55;
+	transition: .3s;
+}
+/*-----------------------------------------menu*/
+.navbar {
+	width: 100%;
+	position: fixed;
+	padding: 20px 0;
+	background: #fff;
+	z-index: 9999;
+}
+.navbar .container {
+	display: flex;
+	justify-content: space-between;
+}
+.menu {
+	display: flex;
+	align-items: center;
+}
+.menu-item {
+	display: inline-block;
+	margin: 0 40px 0;
+	border-bottom: 2px solid transparent;
+}
+.menu-link {
+	display: inline-block;
+	padding: 3px 0 3px;
+	color:  #606060;
+	font-size: 22px;
+	text-decoration: none;
+}
+.menu-item:hover{
+	border-bottom: 2px solid #cddc55;
+}
+.telephone {
+	display: inline-block;
+	text-decoration: none;
+	color:  #555555;
+	font-size: 24px;
+	padding: 15px 30px;
+	box-sizing: border-box;
+	border: 2px solid #cddc55;
+	transition: .3s;
+}
+.telephone:hover {
+	background: #cddc55;
+}
+/*-----------------------------------------head*/
+.head {
+	/*height: 100vh;*/
+	background: #f7f8f8;
+}
+.head-main-contant {
+	box-sizing: border-box;
+	padding: 50px 0 100px;
+	position: relative;
+}
+/*=====================*/
+.blabla {
+	width: 680px;
+	height: 460px;
+	background: darkgray;
+}
+/*=====================*/
+.head-title-block {
+	position: absolute;
+	bottom: 60px;
+    right: 40px;
+	padding: 60px 50px;
+	width: 450px;
+	background: #fff;
+}
+.corinthia-txt {
+	font-family: Corinthia;
+	color:  #9c91bc;
+	font-size: 53px
+}
+.head-title {
+	font-size: 76px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.head-discription {
+ 	color:  #333333;
+	font-size: 25px;
+	text-align: justify;
+ }
+
+.head .btn:hover{
+	box-shadow: 0px 0px 17px 0px #00000059;
+}
+
+.welcome {
+
+}
+.welcome-txt {
+	color:  #333333;
+	font-size: 25px;
+	line-height: 33px;
+	text-align: justify;
+	margin-bottom: 50px;
+}
