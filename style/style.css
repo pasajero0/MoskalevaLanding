@@ -28,6 +28,28 @@ section {
 	background: #cddc55;
 	transition: .3s;
 }
+.btn:hover {
+    box-shadow: 0px 0px 17px 0px #00000059;
+}
+.btn-with-border{
+	display: inline-block;
+	text-decoration: none;
+	color:  #555555;
+	font-size: 24px;
+	padding: 15px 30px;
+	box-sizing: border-box;
+	border: 2px solid #cddc55;
+	transition: .3s;
+}
+.btn-with-border:hover {
+	background: #cddc55;
+}
+.section-title {
+	color: #333333;
+	font-size: 45px;
+	text-align: center;
+	margin-bottom: 60px;
+}
 /*-----------------------------------------menu*/
 .navbar {
 	width: 100%;
@@ -59,7 +81,7 @@ section {
 .menu-item:hover{
 	border-bottom: 2px solid #cddc55;
 }
-.telephone {
+/*.telephone {
 	display: inline-block;
 	text-decoration: none;
 	color:  #555555;
@@ -71,7 +93,7 @@ section {
 }
 .telephone:hover {
 	background: #cddc55;
-}
+}*/
 /*-----------------------------------------head*/
 .head {
 	/*height: 100vh;*/
@@ -92,7 +114,7 @@ section {
 .head-title-block {
 	position: absolute;
 	bottom: 60px;
-    right: 40px;
+    right: 100px;
 	padding: 60px 50px;
 	width: 450px;
 	background: #fff;
@@ -112,11 +134,7 @@ section {
 	font-size: 25px;
 	text-align: justify;
  }
-
-.head .btn:hover{
-	box-shadow: 0px 0px 17px 0px #00000059;
-}
-
+/*-----------------------------------------welcome*/
 .welcome {
 
 }
@@ -126,4 +144,105 @@ section {
 	line-height: 33px;
 	text-align: justify;
 	margin-bottom: 50px;
+}
+.img-ul-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.welcome-list{
+	color:  #333333;
+	font-size: 25px;
+	font-weight: 400;
+}
+.citation {
+	color:  #5e5584;
+	font-size: 28px;
+	font-style: italic;
+	line-height: 45px;
+	text-align: justify;
+	margin: 75px 90px 10px;
+}
+.citation-highlight {
+	font-size: 40px;
+}
+/*-----------------------------------------certificates*/
+.certificates {
+	height: 360px;
+	background: #f7f8f8;
+}
+/*-----------------------------------------what-would-you-get*/
+.what-would-you-get {
+	color: #333333;
+}
+.what-would-you-get-title {
+}
+.what-would-you-get-list {
+	font-size: 26px;
+	line-height: 41px;
+	text-align: justify;
+	margin-right: 70px;
+}
+.bottom-txt {
+	font-size: 36px;
+	font-style: italic;
+	text-align: center;
+	margin-top: 100px;
+}
+.get-consultation {
+	background: #f0ebf5;
+	height: 62px;
+	padding: 50px 0;
+}
+/*-----------------------------------------questions*/
+.questions {
+	background: #f7f8f8;
+}
+.questions .btn-container {
+	margin-top: 45px;
+}
+/*-----------------------------------------contacts*/
+.contacts .container{
+	position: relative;
+}
+.contacts-block {
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	top: 135px;
+	/*background: #ff634745;*/
+}
+.contacts-block-item {
+	width: 255px;
+	/*display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;*/
+}
+.contacts-block-item-txt {
+	color:  #333333;
+	font-size: 26px;
+	text-align: center;
+}
+
+.bolvanka {
+	width: 90px;
+	height: 90px;
+	margin: 0 auto;
+	border: 2px solid olive;
+	margin-bottom: 40px;
+}
+
+/*-----------------------------------------contact-form*/
+.contact-form {
+	background: #f0ebf5;
+	padding-top: 260px;
+}
+/*-----------------------------------------footer*/
+.footer {
+	background:  #c3b5ce;
+
+	height: 260px;
 }
