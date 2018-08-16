@@ -214,6 +214,29 @@ section {
 .questions {
 	background: #f7f8f8;
 }
+.questions-block {
+	display: flex;
+	justify-content: space-around;
+}
+.questions-items-container{
+	width: 660px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.question {
+	padding: 15px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+	background: #c4b6cf;
+}
+.question:last-child {
+	margin-bottom: 0;
+}
+.question-txt {
+	color:  #333333;
+	font-size: 22px;
+}
 .questions .btn-container {
 	margin-top: 45px;
 }
@@ -305,6 +328,7 @@ section {
 .form-btn {
 	font-family: PlayfairDisplay;
 	height: 62px;
+  font-weight: 400;
 	border: none;
 	outline: none;
 	cursor: pointer;
@@ -326,6 +350,7 @@ section {
 	width: 1px;
 	height: 50%;
 }
+
 .footer-name {
 	font-family: Corinthia;
 	color:  #ffffff;
@@ -336,6 +361,7 @@ section {
 	font-size: 16px;
 	text-align: center;
 }
+
 .footer-nav-list {
 	width: 160px;
 }
@@ -350,4 +376,61 @@ section {
 }
 .footer-nav-link:hover  {
 	font-weight: 600;
+}
+
+
+.footer-contacts {
+
+}
+
+.bg {
+	display: inline-block;
+  margin-right: 25px;
+}
+.bg-whatsup {
+	width: 30px; height: 30px;
+  background: url('../img/css_sprites.png') -10px -59px;
+}
+.bg-insta {
+	width: 30px; height: 30px;
+  background: url('../img/css_sprites.png') -106px -10px;
+}
+.bg-mail {
+  width: 31px;
+  height: 21px;
+  background: url(../img/css_sprites.png) 43px -58px;
+  margin-right: 5px;
+}
+.bg-phone {
+	width: 30px; height: 25px;
+  background: url('../img/css_sprites.png') -53px -59px;
+  margin-right: 5px;
+}
+.bg-telegram {
+	width: 30px; height: 30px;
+  background: url('../img/css_sprites.png') -10px -10px;
+}
+.bg-fb {
+	width: 30px; height: 30px;
+  background: url('../img/css_sprites.png') -58px -10px;
+}
+.footer-icons, .footer-phone {
+	margin-bottom: 18px;
+}
+/*.footer-phone, .footer-mail {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}*/
+.footer-phone-item, .footer-mail-item {
+	color:  #ffffff;
+	font-size: 22px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1260px) {
+	.container {
+    width: inherit;
+    margin: 0px 50px;
+	}
 }
