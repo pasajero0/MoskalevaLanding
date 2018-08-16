@@ -19,12 +19,15 @@ section {
 	justify-content: center;
 }
 .btn {
+	width: 402px;
+	text-align: center;
 	display: inline-block;
 	padding: 20px 43px;
 	color: #fff;
 	font-size: 22px;
 	font-weight: 700;
 	text-decoration: none;
+	box-sizing: border-box;
 	background: #cddc55;
 	transition: .3s;
 }
@@ -162,9 +165,22 @@ section {
 	line-height: 45px;
 	text-align: justify;
 	margin: 75px 90px 10px;
+	position: relative;
 }
 .citation-highlight {
 	font-size: 40px;
+}
+.left-quote {
+	position: absolute;
+	bottom: -30px;
+  left: -110px;
+  font-size: 145px;
+}
+.right-quote {
+	position: absolute;
+	top: 37px;
+	right: -75px;
+	font-size: 145px;
 }
 /*-----------------------------------------certificates*/
 .certificates {
@@ -200,6 +216,11 @@ section {
 }
 .questions .btn-container {
 	margin-top: 45px;
+}
+.questions .btn-with-border {
+	width: 402px;
+	box-sizing: border-box;
+	text-align: center;
 }
 /*-----------------------------------------contacts*/
 .contacts .container{
@@ -240,9 +261,93 @@ section {
 	background: #f0ebf5;
 	padding-top: 260px;
 }
+.contact-form-txt {
+	color:  #333333;
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 70px;
+}
+.inputs-textarea {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+.form-inputs {
+	display: flex;
+	flex-direction: column;
+	margin-right: 15px;
+}
+.input, .textarea {
+	width: 550px;
+	border: none;
+	font-family: PlayfairDisplay;
+	font-size: 18px;
+	color: #333;
+	outline: none;
+	box-sizing: border-box;
+	padding: 20px;
+} 
+.input {
+	margin-bottom: 15px;
+}
+.input:last-child {
+	margin-bottom: 0;
+}
+.input::placeholder {
+  color:  #999999;
+}
+.textarea {
+	resize: none;
+}
+.textarea::placeholder {
+  color:  #999999;;
+}
+.form-btn {
+	font-family: PlayfairDisplay;
+	height: 62px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
 /*-----------------------------------------footer*/
 .footer {
-	background:  #c3b5ce;
+	background: #c3b5ce;
 
 	height: 260px;
+}
+.footer .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+.line {
+	background: #fff;
+	width: 1px;
+	height: 50%;
+}
+.footer-name {
+	font-family: Corinthia;
+	color:  #ffffff;
+	font-size: 65px;
+}
+.footer-title-txt {
+	color:  #fff;
+	font-size: 16px;
+	text-align: center;
+}
+.footer-nav-list {
+	width: 160px;
+}
+.footer-nav-item {
+	margin-bottom: 5px;
+}
+.footer-nav-link {
+	color:  #fff;
+	font-size: 22px;
+	text-decoration: none;
+	transition: .3s;
+}
+.footer-nav-link:hover  {
+	font-weight: 600;
 }
