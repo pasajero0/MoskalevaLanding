@@ -70,7 +70,7 @@ section {
 	align-items: center;
 }
 .menu-item {
-	display: inline-block;
+	/*display: inline-block;*/
 	margin: 0 40px 0;
 	border-bottom: 2px solid transparent;
 }
@@ -153,6 +153,9 @@ section {
   justify-content: space-between;
   align-items: center;
 }
+.welcome-img {
+  margin-right: 20px;
+}
 .welcome-list{
 	color:  #333333;
 	font-size: 25px;
@@ -184,8 +187,22 @@ section {
 }
 /*-----------------------------------------certificates*/
 .certificates {
-	height: 360px;
+	/*height: 360px;*/
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
 	background: #f7f8f8;
+}
+.certificates-slider {
+	margin: 0 auto;
+	width: 90%;
+}
+.certificates-slide {
+	background: beige;
+	padding: 50px;
+	box-sizing: border-box;
+	text-align: center;
+	margin: 10px;
 }
 /*-----------------------------------------what-would-you-get*/
 .what-would-you-get {
@@ -198,6 +215,8 @@ section {
 	line-height: 41px;
 	text-align: justify;
 	margin-right: 70px;
+  padding-left: 30px;
+  box-sizing: border-box;
 }
 .bottom-txt {
 	font-size: 36px;
@@ -209,6 +228,29 @@ section {
 	background: #f0ebf5;
 	height: 62px;
 	padding: 50px 0;
+}
+/*-----------------------------------------reviews*/
+.reviews-slider {
+	margin: 0 auto;
+	width: 85%;
+}
+.reviews-slide {
+	height: 240px;
+	background: #f7f8f8;
+	padding: 50px;
+	box-sizing: border-box;
+	color:  #333333;
+	font-size: 22px;
+}
+.rev-head {
+	font-size: 22px;
+	margin-bottom: 25px;
+}
+.rev-txt {
+	color:  #555555;
+	font-size: 20px;
+	font-style: italic;
+	text-align: justify;
 }
 /*-----------------------------------------questions*/
 .questions {
@@ -223,12 +265,15 @@ section {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+  margin-right: 20px;		
 }
 .question {
 	padding: 15px;
 	margin-bottom: 15px;
 	box-sizing: border-box;
 	background: #c4b6cf;
+	cursor: pointer;
+	transition: .3s;
 }
 .question:last-child {
 	margin-bottom: 0;
@@ -244,6 +289,17 @@ section {
 	width: 402px;
 	box-sizing: border-box;
 	text-align: center;
+}
+.answer {
+	/*opacity: 0;*/
+	color: #666;
+	font-size: 18px;
+}
+.clicked {
+	background: #fff;
+}
+.clicked .question-txt {
+	margin-bottom: 20px;
 }
 /*-----------------------------------------contacts*/
 .contacts .container{
@@ -398,7 +454,7 @@ section {
 .bg-mail {
   width: 31px;
   height: 21px;
-  background: url(../img/css_sprites.png) 43px -58px;
+  background: url('../img/css_sprites.png') 43px -58px;
   margin-right: 5px;
 }
 .bg-phone {
@@ -433,4 +489,17 @@ section {
     width: inherit;
     margin: 0px 50px;
 	}
+	.navbar .container {
+		width: 93%;
+    /*justify-content: space-around;*/
+    /*margin: 0;*/
+	}
+	.menu-item {
+    margin: 0;
+    margin-right: 40px;
+    border-bottom: 2px solid transparent;
+	}
+	.input, .textarea {
+    width: 400px;
+  }
 }

@@ -4,17 +4,22 @@
 		<meta charset="UTF-8">
 		<title>MoskalevaLanding</title>
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="style/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="style/slick-theme.css"/>
+		
 		<link rel="stylesheet" href="style/reset.css">
 		<link rel="stylesheet" href="style/style.css">
 	</head>
 	<body>
 		<nav class="navbar">
 			<div class="container">
-				<ul class="menu">
-					<li class="menu-item"><a href="#" class="menu-link">Обо мне</a></li>
-					<li class="menu-item"><a href="#" class="menu-link">Отзывы</a></li>
-					<li class="menu-item"><a href="#" class="menu-link">Вопросы и ответы</a></li>
-					<li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
+				<ul id="menu" class="menu">
+					<li class="menu-item"><a href="#welcome" class="menu-link">Обо мне</a></li>
+					<li class="menu-item"><a href="#reviews" class="menu-link">Отзывы</a></li>
+					<li class="menu-item"><a href="#questions" class="menu-link">Вопросы и ответы</a></li>
+					<li class="menu-item"><a href="#contacts" class="menu-link">Контакты</a></li>
 				</ul>
 				<a href="tel:+79250111590" class="btn-with-border">+7 (925) 011-15-90</a>
 			</div>
@@ -35,12 +40,12 @@
 					</div>
 				</div>
 				<div class="btn-container">
-					<a href="#" class="btn">Записаться на консультацию</a>
+					<a href="#contact-form" class="btn">Записаться на консультацию</a>
 				</div>
 			</div>
 		</section>
 		
-		<section class="welcome">
+		<section id="welcome" class="welcome">
 			<div class="container">
 				<p class="welcome-txt">Добро пожаловать на мой сайт! Меня зовут Оксана Москалева. Я практикующий психолог, коуч, гипнотерапевт, эксперт по психосоматике, остеопат, автор нескольких научно-популярных статей. Одна из моих работ (по эмоциональному выгоранию и саморегуляции), созданная совместно с профессором психологии и моим учителем, опубликована в научном журнале. Спектр моих интересов обширен: практикую йогу, люблю писать маслом, вязать, кататься на мотоцикле и роликах. Мне нравится путешествовать, учиться новому, люблю перечитывать классиков, каждый раз открывая в уже изученном что-то новое, ранее не замеченное.
 				</p>
@@ -48,7 +53,7 @@
 				Люди обращаются ко мне не для того, чтобы стать лучше. Они хотят изменить себя, свою жизнь, найти дорогу в своё ресурсное состояние, которое хранит ответы на все вопросы, хранит ключики к трансформации и эволюции. Я помогу открыть в вас нечто волшебное и применить его в жизни, используя различные направления работы:
 				</p>
 				<div class="img-ul-container">
-					<img src="img/img1.png" alt="img">
+					<img class="welcome-img" src="img/img1.png" alt="img">
 					<ul class="welcome-list">
 						<li>- психологическое консультирование</li>
 						<li>- коучинг</li>
@@ -66,19 +71,26 @@
 			</div>
 		</section>
 		
-		<section class="certificates"></section>
+		<section class="certificates">
+			<div class="certificates-slider">
+				<div class="certificates-slide">1</div>
+				<div class="certificates-slide">2</div>
+				<div class="certificates-slide">3</div>
+				<div class="certificates-slide">4</div>
+			</div>
+		</section>
 
 		<section class="what-would-you-get">
 			<div class="container">
 				<h3 class="what-would-you-get-title section-title">Что вы получите в результате общения со мной?</h3>
 				<div class="img-ul-container">
 					<ul class="what-would-you-get-list">
-						<li>- Понятную цель, если вы запутались в собственной жизни;</li>
-						<li>- Навыки достижения целей, если они ясны, но тают, как мираж, при приближении;</li>
-						<li>- Отсутствие «любимых граблей» под ногами, если устали спотыкаться в похожих ситуациях;</li>
-						<li>- Road Map, если по-старому уже невозможно, а по-новому – неизвестно, как начать;</li>
-						<li>- Гармонию в отношениях, если вы - само совершенство, а партнер так ужасен, что бесит (и наоборот);</li>
-						<li>- Спокойствие во всем, если вы до жути боитесь самолетов, темноты, кошек или пауков.</li>
+						<li>Понятную цель, если вы запутались в собственной жизни;</li>
+						<li>Навыки достижения целей, если они ясны, но тают, как мираж, при приближении;</li>
+						<li>Отсутствие «любимых граблей» под ногами, если устали спотыкаться в похожих ситуациях;</li>
+						<li>Road Map, если по-старому уже невозможно, а по-новому – неизвестно, как начать;</li>
+						<li>Гармонию в отношениях, если вы - само совершенство, а партнер так ужасен, что бесит (и наоборот);</li>
+						<li>Спокойствие во всем, если вы до жути боитесь самолетов, темноты, кошек или пауков.</li>
 					</ul>
 					<img src="img/img2.png" alt="img">
 				</div>
@@ -88,45 +100,76 @@
 
 		<section class="get-consultation">
 			<div class="btn-container">
-				<a href="#" class="btn consultation-btn">Получить консультацию</a>
+				<a href="#contact-form" class="btn consultation-btn">Получить консультацию</a>
 			</div>
 		</section>
 		
-		<section class="reviews">
+		<section id="reviews" class="reviews">
 			<h3 class="section-title">Отзывы моих клиентов</h3>
+			<div class="reviews-slider">
+				<div class="reviews-slide">
+					<p class="rev-head">Айгуль, Март 2017:</p>
+					<p class="rev-txt">«Профессионал в самом глубинном понимании, творчески и очень внимательно относится к каждому клиенту с искренним позитивным желанием помочь. У нее богатый арсенал приемов и техник психотерапии. Необычайно милая и приятная в общении».</p>
+				</div>
+				<div class="reviews-slide">
+					<p class="rev-head">Саша, Апрель 2017:</p>
+					<p class="rev-txt">«Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi impedit, optio voluptate magni natus quam, consectetur accusantium. Veritatis aliquam, repudiandae? Voluptas accusamus, numquam amet, voluptates corporis minus molestias doloribus cum!».</p>
+				</div>
+				<div class="reviews-slide">
+					<p class="rev-head">Даша, Май 2017:</p>
+					<p class="rev-txt">«Профессионал в самом глубинном понимании, творчески и очень внимательно относится к каждому клиенту с искренним позитивным желанием помочь. У нее богатый арсенал приемов и техник психотерапии. Необычайно милая и приятная в общении».</p>
+				</div>
+				<div class="reviews-slide">
+					<p class="rev-head">Маша, Июнь 2017:</p>
+					<p class="rev-txt">«Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, iusto quos! Non odio eligendi, excepturi fugit dolore inventore odit quia aliquam! Consequuntur quos ducimus, ex aut veritatis sequi odio voluptatum.».</p>
+				</div>
+				<div class="reviews-slide">
+					<p class="rev-head">Глаша, Июль 2017:</p>
+					<p class="rev-txt">«Профессионал в самом глубинном понимании, творчески и очень внимательно относится к каждому клиенту с искренним позитивным желанием помочь. У нее богатый арсенал приемов и техник психотерапии. Необычайно милая и приятная в общении».</p>
+				</div>
+				<div class="reviews-slide">
+					<p class="rev-head">Степаша, Август 2017:</p>
+					<p class="rev-txt">«Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aperiam rem vero voluptates nemo, nulla iusto id facilis doloribus fugiat suscipit asperiores adipisci cumque placeat. Quod error, dolorem consectetur eligendi!».</p>
+				</div>
+			</div>
 		</section>
 
-		<section class="questions">
+		<section id="questions" class="questions">
 			<div class="container">
 				<h3 class="section-title">Вопросы и ответы</h3>
 				<div class="questions-block">
 					<div class="questions-items-container">
 						<div class="question">
 							<p class="question-txt">Сколько длится одна консультация?</p>
+							<p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, sit. Facere sunt libero non minima odio totam, harum aspernatur quis cum quisquam culpa ad iure suscipit magnam expedita est illo.</p>
 						</div>
 						<div class="question">
 							<p class="question-txt">Сколько сеансов нужно пройти для достижения устойчивого результата?</p>
+							<p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nesciunt, aspernatur iure cumque amet ratione. Dolorem odit quia perspiciatis quasi mollitia, consectetur odio a incidunt! Repellendus harum laudantium, error illo!</p>
 						</div>
 						<div class="question">
 							<p class="question-txt">Могут ли присутствовать близкие (муж/ жена) во время сессии?</p>
+							<p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, recusandae. Cupiditate dolor inventore facere dolorem, ipsam laboriosam mollitia qui officiis accusamus consequatur, doloremque optio fugiat beatae laudantium suscipit placeat nemo!</p>
 						</div>
 						<div class="question">
 							<p class="question-txt">Можно ли вынести семейные проблемы для индивидуальной работы в терапию?</p>
+							<p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, quam minus eos quisquam. Laboriosam, repudiandae doloribus officia magni, minus est esse voluptatum omnis quis eligendi ipsam assumenda praesentium autem saepe.</p>
 						</div>
 						<div class="question">
 							<p class="question-txt">Можно ли привести на терапию близкого человека, если он боится/сомневается/не уверен, что ему это надо?</p>
+							<p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quis placeat culpa delectus ipsa, accusantium. Dolore quasi nulla dolorum aliquid iste delectus optio, voluptatem qui eos minus, tenetur alias eum.</p>
 						</div>
 					</div>
 					<img src="img/img3.png" alt="img">
 				</div>
 				<p class="bottom-txt">Не нашли ответа на свой вопрос?</p>
 				<div class="btn-container">
-					<a href="#" class="btn-with-border">Задайте его мне</a>
+					<a href="#contact-form" class="btn-with-border">Задайте его мне</a>
 				</div>
 			</div>
 		</section>
 
-		<section class="contacts">
+		<section id='contacts' class="contacts">
 			<div class="container">
 				<h3 class="section-title">Контакты</h3>
 				<div class="contacts-block">
@@ -152,7 +195,7 @@
 			</div>
 		</section>
 
-		<section class="contact-form">
+		<section id="contact-form" class="contact-form">
 			<div class="container">
 				<p class="contact-form-txt">В данной форме вы можете задать свой вопрос или записаться на консультацию.</p>
 				<form action='php/mail.php' method="POST" class="form">
@@ -178,10 +221,10 @@
 				<div class="line"></div>
 				<div class="footer-nav">
 					<ul class="footer-nav-list">
-						<li class="footer-nav-item"><a href="#" class="footer-nav-link">Обо мне</a></li>
-						<li class="footer-nav-item"><a href="#" class="footer-nav-link">Отзывы</a></li>
-						<li class="footer-nav-item"><a href="#" class="footer-nav-link">Вопрос-ответ</a></li>
-						<li class="footer-nav-item"><a href="#" class="footer-nav-link">Контакты</a></li>
+						<li class="footer-nav-item"><a href="#welcome" class="footer-nav-link">Обо мне</a></li>
+						<li class="footer-nav-item"><a href="#reviews" class="footer-nav-link">Отзывы</a></li>
+						<li class="footer-nav-item"><a href="#questions" class="footer-nav-link">Вопрос-ответ</a></li>
+						<li class="footer-nav-item"><a href="#contacts" class="footer-nav-link">Контакты</a></li>
 					</ul>
 				</div>
 				<div class="line"></div>
@@ -203,5 +246,10 @@
 				</div>
 			</div>
 		</footer>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="js/slick.min.js"></script>
+		<script src='js/index.js'></script>
 	</body>
 </html>
