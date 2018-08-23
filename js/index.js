@@ -18,6 +18,7 @@ $(document).ready(function(){
 	        top = $(id).offset().top;
 	    $('body,html').animate({scrollTop: top}, 1500);
 	});
+
 	// $('#mobDropmenu').on("click","a", function (event) {
 	//     event.preventDefault();
 	//     var id  = $(this).attr('href'),
@@ -95,7 +96,6 @@ $(document).ready(function(){
 	});
 
 	$('.answer').hide();
-
 	$('.question').on('click', (e) => {
 	if ($(e.currentTarget).hasClass('clicked')) {
 		$(e.currentTarget).removeClass('clicked');
@@ -104,6 +104,7 @@ $(document).ready(function(){
 		$(e.currentTarget).addClass('clicked');
 		$(e.currentTarget.lastElementChild).show(300);
 	}
+	});
 	// 	$("#mobDropmenu").animate({
 	// 		height: 'hide'
 	// 	},{
@@ -111,6 +112,6 @@ $(document).ready(function(){
 	// 		specialEasing: { 
 	// 			height: 'swing'
 	// 		}
-	});
+	// });
 
 });

@@ -11,7 +11,7 @@ section {
 	padding-bottom: 70px;
 }
 .container {
-	width: 1200px;
+	width: 1100px;
 	margin: 0 auto;
 }
 .btn-container {
@@ -20,16 +20,16 @@ section {
 }
 .btn {
 	width: 402px;
-	text-align: center;
-	display: inline-block;
-	padding: 20px 43px;
-	color: #fff;
-	font-size: 22px;
-	font-weight: 700;
-	text-decoration: none;
-	box-sizing: border-box;
-	background: #cddc55;
-	transition: .3s;
+  text-align: center;
+  display: inline-block;
+  padding: 20px 43px;
+  color: #fff;
+  font-size: 22px;
+  /*font-weight: 700;*/
+  text-decoration: none;
+  box-sizing: border-box;
+  background: #cddc55;
+  transition: .3s;
 }
 .btn:hover {
     box-shadow: 0px 0px 17px 0px #00000059;
@@ -38,7 +38,7 @@ section {
 	display: inline-block;
 	text-decoration: none;
 	color:  #555555;
-	font-size: 24px;
+	font-size: 22px;
 	padding: 15px 30px;
 	box-sizing: border-box;
 	border: 2px solid #cddc55;
@@ -48,10 +48,10 @@ section {
 	background: #cddc55;
 }
 .section-title {
-	color: #333333;
-	font-size: 45px;
-	text-align: center;
-	margin-bottom: 60px;
+  color: #555;
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 /*-----------------------------------------menu*/
 .navbar {
@@ -65,21 +65,27 @@ section {
 	display: flex;
 	justify-content: space-between;
 }
+.mobmenu-btn {
+  padding: 20px;
+  font-size: 30px;
+}
 .menu {
+	/*display: none;*/
 	display: flex;
 	align-items: center;
 }
 .menu-item {
 	/*display: inline-block;*/
-	margin: 0 40px 0;
+	/*margin: 0 40px 0;*/
+	margin-right: 40px;
 	border-bottom: 2px solid transparent;
 }
 .menu-link {
-	display: inline-block;
-	padding: 3px 0 3px;
-	color:  #606060;
-	font-size: 22px;
-	text-decoration: none;
+  display: inline-block;
+  padding: 3px 0 3px;
+  color: #777777;
+  font-size: 20px;
+  text-decoration: none;
 }
 .menu-item:hover{
 	border-bottom: 2px solid #cddc55;
@@ -142,11 +148,13 @@ section {
 
 }
 .welcome-txt {
-	color:  #333333;
-	font-size: 25px;
-	line-height: 33px;
-	text-align: justify;
-	margin-bottom: 50px;
+	color: #555555;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+/*  margin-left: 40px;
+  margin-right: 40px;
+*/  margin-bottom: 50px;
 }
 .img-ul-container{
   display: flex;
@@ -157,9 +165,10 @@ section {
   margin-right: 20px;
 }
 .welcome-list{
-	color:  #333333;
-	font-size: 25px;
-	font-weight: 400;
+	color: #555555;
+  font-size: 20px;
+  line-height: 30px;
+  /*margin-right: 120px*/
 }
 .citation {
 	color:  #5e5584;
@@ -167,7 +176,7 @@ section {
 	font-style: italic;
 	line-height: 45px;
 	text-align: justify;
-	margin: 75px 90px 10px;
+	margin: 75px 100px 10px;
 	position: relative;
 }
 .citation-highlight {
@@ -227,11 +236,11 @@ section {
 .what-would-you-get-title {
 }
 .what-would-you-get-list {
-	font-size: 26px;
-	line-height: 41px;
+	font-size: 22px;
+	line-height: 40px;
 	text-align: justify;
-	margin-right: 30px;
-  padding-left: 40px;
+	margin-right: 60px;
+  padding-left: 90px;
   box-sizing: border-box;
 }
 .what-would-you-get-list li {
@@ -242,7 +251,7 @@ section {
   height: 28px;
   background-position: -5px -5px;
   position: absolute;
-  left: -45px;
+  left: -70px;
   top: 5px;
 }
 .bottom-txt {
@@ -308,7 +317,7 @@ section {
 }
 .slick-dots li button:before {
   font-size: 30px;
-  color: #f0ebf5;
+  color: #d0a3fd;
 }
 .slick-dots li.slick-active button:before {
   color: #c4b6cf;
@@ -355,7 +364,6 @@ section {
 	text-align: center;
 }
 .answer {
-	/*opacity: 0;*/
 	color: #666;
 	font-size: 18px;
 	text-align: justify;
@@ -389,8 +397,8 @@ section {
 	align-items: center;*/
 }
 .contacts-block-item-txt {
-	color:  #333333;
-	font-size: 26px;
+	color:  #555;
+	font-size: 24px;
 	text-align: center;
 }
 
@@ -398,7 +406,7 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 110px;
+	width: 180px;
 	height: 80px;
 	margin: 0 auto;
 	/*border: 2px solid olive;*/
@@ -589,17 +597,17 @@ section {
 }*/
 .footer-phone-item, .footer-mail-item {
 	color:  #ffffff;
-	font-size: 22px;
+	font-size: 18px;
   text-decoration: none;
 }
 
 @media only screen and (max-width: 1260px) {
 	.container {
     width: inherit;
-    margin: 0px 50px;
+    margin: 0px 80px;
 	}
 	.navbar .container {
-		width: 93%;
+		width: 90%;
     /*justify-content: space-around;*/
     /*margin: 0;*/
 	}
