@@ -12,16 +12,9 @@ $(document).ready(function(){
 	// });
 	//--------------------------------------------------- anchor
 
-	$("#menu").on("click",".menu-link", function (event) {
+	$(".btn-click").on("click", function (event) {
 	    event.preventDefault();
-	    var id  = $(this).attr('href'),
-	        top = $(id).offset().top;
-	    $('body,html').animate({scrollTop: top}, 1500);
-	});
-
-	$(".footer-nav").on("click",".footer-nav-link", function (event) {
-	    event.preventDefault();
-	    var id  = $(this).attr('href'),
+	    let id  = $(this).attr('href'),
 	        top = $(id).offset().top;
 	    $('body,html').animate({scrollTop: top}, 1500);
 	});
@@ -80,14 +73,13 @@ $(document).ready(function(){
 		slidesToShow: 3,
   	slidesToScroll: 1,
   	autoplaySpeed: 2000,
-		dots: true,
 		infinite: true,
 		speed: 1000,
 		autoplay: true,
 	 	variableWidth: false,
+		nextArrow: '<i class="sprite3 sprite3-right-cert"></i>',
+		prevArrow: '<i class="sprite3 sprite3-left-cenrt"></i>',
 	});	
-		// nextArrow: "<img class='slick-next' src='gallery/icons/right.svg' alt='next'>",
-		// prevArrow: "<img class='slick-prev' src='gallery/icons/left.svg' alt='prev'>",
 
 	$('.reviews-slider').slick({
 		slidesToShow: 1,
@@ -98,6 +90,8 @@ $(document).ready(function(){
 		speed: 1000,
 		autoplay: true,
 	 	variableWidth: false,
+	 	nextArrow: '<i class="sprite3 sprite3-right-rev"></i>',
+		prevArrow: '<i class="sprite3 sprite3-left-rev"></i>',
 	});
 
 	$('.answer').hide();
