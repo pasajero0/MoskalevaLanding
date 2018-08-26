@@ -7,7 +7,7 @@ if (!empty($_POST['name']) and !empty($_POST['email']) and !empty($_POST['phone'
 	$phone = $_POST['phone'];
 	$message = $_POST['message'];
 
-	$to = "leomalinovsky@gmail.com";
+	$to = "moskalevaok@mail.ru";
 	$letter = 'Сообщение с сайта <br/><br/>
 	Имя: '.htmlspecialchars($name).'<br/>
 	Телефон: '.htmlspecialchars($phone).'<br/>
@@ -17,9 +17,10 @@ if (!empty($_POST['name']) and !empty($_POST['email']) and !empty($_POST['phone'
 	$headers .= "From:".htmlspecialchars($email);
 	
 	mail($to, $theme , $letter, $headers);
-	// header("location: ../contacts.html");
-	echo "SUCCESS!";
+	header("location: ../success.html");
+ 	echo "SUCCESS!";
 }else{
- echo "ERROR!";
+	header("location: ../error.html");
+	echo "ERROR!";
 }
 ?>

@@ -180,9 +180,9 @@ section {
 	border-bottom: 2px solid transparent;
 }
 .menu-link {
-  /*display: inline-block;*/
   padding: 3px 0 3px;
   color: #777777;
+  line-height: 25px;	
   font-size: 20px;
   text-decoration: none;
 }
@@ -307,19 +307,19 @@ section {
 	position: relative;
 }
 .sprite3-left-cenrt {
-    width: 28px;
-    height: 49px;
-    background-position: -5px -5px;
-    left: -35px;
-    top: 47px;
+  width: 28px;
+  height: 49px;
+  background-position: -5px -5px;
+  left: -35px;
+  top: 47px;
 }
 
 .sprite3-right-cert {
-    width: 28px;
-    height: 49px;
-    background-position: -81px -5px;
-    right: -35px;
-    top: 47px;
+  width: 28px;
+  height: 49px;
+  background-position: -81px -5px;
+  right: -35px;
+  top: 47px;
 }
 .certificates-slide {
 	background: beige;
@@ -397,18 +397,18 @@ section {
   cursor: pointer;
 }
 .sprite3-left-rev {
-    width: 28px;
-    height: 49px;
-    background-position: -43px -5px;
-    left: -45px;
-    top: 90px;
+  width: 28px;
+  height: 49px;
+  background-position: -43px -5px;
+  left: -45px;
+  top: 90px;
 }
 .sprite3-right-rev {
-    width: 28px;
-    height: 49px;
-    background-position: -5px -64px;
-    right: -45px;
-    top: 90px;
+  width: 28px;
+  height: 49px;
+  background-position: -5px -64px;
+  right: -45px;
+  top: 90px;
 }
 
 .slick-dots {
@@ -466,13 +466,14 @@ section {
 	color: #666;
 	font-size: 18px;
 	text-align: justify;
+	margin-top: 20px;
 }
 .clicked {
 	background: #fff;
 }
-.clicked .question-txt {
+/*.clicked .question-txt {
 	margin-bottom: 20px;
-}
+}*/
 /*-----------------------------------------contacts*/
 .contacts .container{
 	position: relative;
@@ -517,7 +518,6 @@ section {
   background-repeat: no-repeat;
   display: inline-block;
 }
-
 
 .sprite-location {
   width: 60px;
@@ -644,60 +644,86 @@ section {
 }
 
 .footer-icons .sprite {
-	margin-right: 25px;
+	margin-right: 15px;
 }
 .sprite {
-  background-image: url("../img/spritesheet.png");
-  background-repeat: no-repeat;
-  display: inline-block;
-  margin-right: 15px;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .sprite-call {
-  width: 24px;
-  height: 25px;
-  background-position: -5px -5px;
+    width: 24px;
+    height: 25px;
+    background-position: -5px -5px;
 }
 
 .sprite-fb {
-  width: 28px;
-  height: 28px;
-  background-position: -39px -5px;
+    width: 28px;
+    height: 28px;
+    background-position: -39px -5px;
 }
 
 .sprite-inst {
-  width: 28px;
-  height: 28px;
-  background-position: -5px -43px;
+    width: 28px;
+    height: 28px;
+    background-position: -5px -43px;
 }
 
 .sprite-post {
-  width: 28px;
-  height: 20px;
-  background-position: -43px -43px;
+    width: 28px;
+    height: 20px;
+    background-position: -43px -43px;
+}
+
+.sprite-skype {
+    width: 28px;
+    height: 28px;
+    background-position: -77px -5px;
 }
 
 .sprite-telegram {
-  width: 28px;
-  height: 29px;
-  background-position: -81px -5px;
+    width: 28px;
+    height: 29px;
+    background-position: -81px -43px;
 }
 
-.sprite-what {
-  width: 28px;
-  height: 28px;
-  background-position: -81px -44px;
+.sprite-whatsup {
+    width: 28px;
+    height: 28px;
+    background-position: -5px -82px;
 }
 
-/*.footer-phone, .footer-mail {
+.footer-phone, .footer-mail, .footer-skype {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-}*/
-.footer-phone-item, .footer-mail-item {
 	color:  #ffffff;
 	font-size: 18px;
   text-decoration: none;
+}
+
+.success-error {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+}
+.success-error-info {
+	color: #555555;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.success {
+	background: ;
+}
+.error {
+	background: ;
 }
 
 @media only screen and (max-width: 1260px) {
@@ -723,47 +749,55 @@ section {
 	  	left: inherit;
 		  right: -20px;
 		}
-		@media only screen and (max-width: 960px) {
+		@media only screen and (max-width: 1000px) {
 			.mobmenu-btn {
 				display: block;
 			}
 			.menu {
 				display: none;
 			}
-			.footer-nav {
-				display: none;
-			}
-			.line {
-				display: none;
-			}
-			@media only screen and (max-width: 860px) {
-				.container {
-			    width: inherit;
-			    margin: 0px 30px;
+			@media only screen and (max-width: 960px) {
+				/*.mobmenu-btn {
+					display: block;
 				}
-				.welcome-img {
+				.menu {
+					display: none;
+				}*/
+				.footer-nav {
 					display: none;
 				}
-				.questions-block img {
-				  display: none;
-				}
-				.img-ul-container img {
+				.line {
 					display: none;
 				}
-				.inputs-textarea {
-				  flex-direction: column;  
-				}
-				.input, .textarea {
-			    width: 100%;
-				}
-				.form-inputs {
-			    margin-right: 0;
-				}
-				.input:last-child {
-			    margin-bottom: 15px;
-				}
-				.textarea {
-					height: 250px;
+				@media only screen and (max-width: 860px) {
+					.container {
+				    width: inherit;
+				    margin: 0px 30px;
+					}
+					.welcome-img {
+						display: none;
+					}
+					.questions-block img {
+					  display: none;
+					}
+					.img-ul-container img {
+						display: none;
+					}
+					.inputs-textarea {
+					  flex-direction: column;  
+					}
+					.input, .textarea {
+				    width: 100%;
+					}
+					.form-inputs {
+				    margin-right: 0;
+					}
+					.input:last-child {
+				    margin-bottom: 15px;
+					}
+					.textarea {
+						height: 250px;
+					}
 				}
 			}
 		}
