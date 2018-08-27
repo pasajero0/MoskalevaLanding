@@ -4,7 +4,9 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 		const ST = $(this).scrollTop();
 		const WW = $(window).width();
-		if (ST >= 5300 && WW >= 1000 ) {
+		// console.log(ST);
+		// console.log(WW);
+		if (ST >= 5250 && WW >= 1070){
 			$('#navbar').slideUp(300);
 		} else {
 			$('#navbar').slideDown(300);
@@ -53,7 +55,7 @@ $(document).ready(function(){
 	 	nextArrow: '<i class="sprite3 sprite3-right-rev"></i>',
 		prevArrow: '<i class="sprite3 sprite3-left-rev"></i>',
 	});
-	
+
 	//--------------------------------------------------- question-answer
 
 	$('.answer').slideUp();

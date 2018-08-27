@@ -1,6 +1,6 @@
 @font-face {
-	font-family: Corinthia;
-	src: url(../fonts/Corinthia.ttf);
+	font-family: RosamundaTwo;
+	src: url(../fonts/RosamundaTwo.ttf);
 }
 /*-----------------------------------------common*/
 body {
@@ -228,12 +228,12 @@ section {
 	background: #fff;
 }
 .corinthia-txt {
-	font-family: Corinthia;
+	font-family: RosamundaTwo;
 	color:  #9c91bc;
-	font-size: 53px
+	font-size: 52px
 }
 .head-title {
-	font-size: 76px;
+	font-size: 70px;
 	text-align: center;
 	margin-bottom: 50px;
 }
@@ -559,9 +559,9 @@ section {
 	margin-right: 15px;
 }
 .input, .textarea {
+	font-family: PlayfairDisplay;
 	width: 550px;
 	border: none;
-	font-family: PlayfairDisplay;
 	font-size: 18px;
 	color: #333;
 	outline: none;
@@ -610,9 +610,9 @@ section {
 }
 
 .footer-name {
-	font-family: Corinthia;
+	font-family: RosamundaTwo;
 	color:  #ffffff;
-	font-size: 65px;
+	font-size: 60px;
 }
 .footer-title-txt {
 	color:  #fff;
@@ -719,12 +719,12 @@ section {
   text-align: center;
   margin-bottom: 50px;
 }
-.success {
+/*.success {
 	background: ;
 }
 .error {
 	background: ;
-}
+}*/
 
 @media only screen and (max-width: 1260px) {
 	.container {
@@ -749,26 +749,26 @@ section {
 	  	left: inherit;
 		  right: -20px;
 		}
-		@media only screen and (max-width: 1000px) {
+		@media only screen and (max-width: 1080px) {
 			.mobmenu-btn {
 				display: block;
 			}
 			.menu {
 				display: none;
 			}
-			@media only screen and (max-width: 960px) {
+			.footer-nav {
+				display: none;
+			}
+			.line {
+				display: none;
+			}
+			/*@media only screen and (max-width: 960px) {*/
 				/*.mobmenu-btn {
 					display: block;
 				}
 				.menu {
 					display: none;
 				}*/
-				.footer-nav {
-					display: none;
-				}
-				.line {
-					display: none;
-				}
 				@media only screen and (max-width: 860px) {
 					.container {
 				    width: inherit;
@@ -799,7 +799,7 @@ section {
 						height: 250px;
 					}
 				}
-			}
+			/*}*/
 		}
 	}
 }
