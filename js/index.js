@@ -32,7 +32,7 @@ $(document).ready(function(){
 	//--------------------------------------------------- slider
 
 	$('.certificates-slider').slick({
-		slidesToShow: 3,
+		slidesToShow: 1,
   	slidesToScroll: 1,
   	autoplaySpeed: 2000,
 		infinite: true,

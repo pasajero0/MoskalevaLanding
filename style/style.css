@@ -32,7 +32,7 @@ section {
   transition: .3s;
 }
 .btn:hover {
-    box-shadow: 0px 0px 17px 0px #00000059;
+  box-shadow: 0px 0px 17px 0px #00000059;
 }
 .btn-with-border{
 	display: inline-block;
@@ -213,15 +213,23 @@ section {
 	position: relative;
 }
 /*=====================*/
-.blabla {
-	width: 680px;
+.head-photo-container {
+	position: relative;
+	width: 80%;
+	min-width: 680px;
+	/*width: 680px;
 	height: 460px;
-	background: darkgray;
+*/	/*background: darkgray;*/
+}
+.head-photo {
+	width: 100%;
+	height: 100%;
 }
 /*=====================*/
 .head-title-block {
 	position: absolute;
-	bottom: 60px;
+	/*bottom: 60px;*/
+	bottom: 35px;
   left: 500px;
 	padding: 60px 50px;
 	width: 450px;
@@ -235,7 +243,8 @@ section {
 .head-title {
 	font-size: 70px;
 	text-align: center;
-	margin-bottom: 50px;
+	/*margin-bottom: 50px;*/
+	margin-bottom: 25px;
 }
 .head-discription {
  	color:  #333333;
@@ -262,6 +271,8 @@ section {
 }
 .welcome-img {
   margin-right: 20px;
+  width: 50%;
+  /*width: 444px;*/
 }
 .welcome-list{
 	color: #555555;
@@ -311,7 +322,7 @@ section {
   height: 49px;
   background-position: -5px -5px;
   left: -35px;
-  top: 47px;
+  top: 42%;
 }
 
 .sprite3-right-cert {
@@ -319,14 +330,18 @@ section {
   height: 49px;
   background-position: -81px -5px;
   right: -35px;
-  top: 47px;
+  top: 42%;
 }
 .certificates-slide {
-	background: beige;
+	display: block;
+	/*background: beige;
 	padding: 50px;
 	box-sizing: border-box;
 	text-align: center;
-	margin: 10px;
+	margin: 10px;*/
+}
+.certificates-slide img {
+	margin: 0 auto;
 }
 /*-----------------------------------------what-would-you-get*/
 .what-would-you-get {
@@ -344,6 +359,10 @@ section {
 }
 .what-would-you-get-list li {
 	position: relative;
+}
+.what-would-you-get-img {
+	/*height: 446px;*/
+	width: 35%;
 }
 .sprite-check {
   width: 33px;
@@ -507,7 +526,7 @@ section {
 	justify-content: center;
 	align-items: center;
 	width: 180px;
-	height: 80px;
+	height: 63px;
 	margin: 0 auto;
 	/*border: 2px solid olive;*/
 	margin-bottom: 40px;
@@ -520,9 +539,11 @@ section {
 }
 
 .sprite-location {
-  width: 60px;
+  /*width: 60px;*/
+  width: 85px;
   height: 86px;
-  background-position: -48px -5px;
+/*  background-position: -48px -5px;*/
+  background-image: url(../img/skype-1.png);
 }
 
 .sprite-mail {
@@ -574,19 +595,19 @@ section {
 .input:last-child {
 	margin-bottom: 0;
 }
-.input::placeholder {
+/*.input::placeholder {
   color:  #999999;
-}
+}*/
 .textarea {
 	resize: none;
 }
-.textarea::placeholder {
-  color:  #999999;;
+.textarea::placeholder, .input::placeholder  {
+  /*font-family: PlayfairDisplay;*/
+  color:  #999999;
 }
 .form-btn {
 	font-family: PlayfairDisplay;
 	height: 62px;
-  font-weight: 400;
 	border: none;
 	outline: none;
 	cursor: pointer;
