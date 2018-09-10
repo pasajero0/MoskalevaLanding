@@ -155,7 +155,7 @@ section {
 .mobmenu {
 	background: #fff;
   position: absolute;
-  box-shadow: 0px 4px 10px -5px #777;
+  /*box-shadow: 0px 4px 10px -5px #777;*/
   padding: 30px;
   box-sizing: border-box;
   padding: 30px;
@@ -278,7 +278,16 @@ section {
 	color: #555555;
   font-size: 20px;
   line-height: 30px;
+  box-sizing: border-box;
+  padding-left: 30px;
   /*margin-right: 120px*/
+}
+.welcome-list > li {
+	position: relative;
+}
+.welcome-list > li > span {
+	position: absolute;
+	left: -20px;
 }
 .citation {
 	color:  #5e5584;
@@ -380,7 +389,6 @@ section {
 }
 .get-consultation {
 	background: #f0ebf5;
-	height: 62px;
 	padding: 50px 0;
 }
 /*-----------------------------------------reviews*/
@@ -607,7 +615,7 @@ section {
 }
 .form-btn {
 	font-family: PlayfairDisplay;
-	height: 62px;
+	/*height: 62px;*/
 	border: none;
 	outline: none;
 	cursor: pointer;
@@ -765,6 +773,7 @@ section {
 	.input, .textarea {
     width: 400px;
   }
+
 	@media only screen and (max-width: 1160px) {
 	  .head-title-block {
 	  	left: inherit;
@@ -777,12 +786,17 @@ section {
 			.menu {
 				display: none;
 			}
-			.footer-nav {
-				display: none;
+
+			.head-main-contant {
+		    padding: 70px 0 260px;
+		  }
+			.head-photo-container {
+			  width: 60%;
 			}
-			.line {
-				display: none;
+			.head-discription {
+			  font-size: 32px;
 			}
+
 			.img-ul-container {
   			display: flex;
 		    flex-wrap: wrap-reverse;
@@ -790,7 +804,7 @@ section {
 		    align-items: center;
 			}
 			.welcome-list {
-		    font-size: 25px;
+		    font-size: 27px;
     		line-height: 40px;
 			  margin-bottom: 80px;
 			}
@@ -798,20 +812,45 @@ section {
 		    margin-right: 0;
 		    width: 70%;
 			}
-			.what-would-you-get-list {
+			.welcome-txt {
 		    font-size: 30px;
+		    line-height: 36px;
+			}
+
+			.citation {
+		    font-size: 40px;
+		    margin: 75px 50px 10px;
+			}
+			
+			.what-would-you-get-list {
+		    font-size: 36px;
 		    line-height: 50px;
 			}
 			.what-would-you-get-img {
     		display: none;
     	}
+
     	.questions-items-container {
+				width: 100%;
 				margin-right: 0;
 			}
     	.questions-block img {
 			  display: none;
 			}
-			/*-----------------------*/
+			.question {
+		    padding: 25px;
+		  }
+			.question-txt {
+			  font-size: 36px;
+			}
+			.answer {
+			  font-size: 30px;
+			  margin-top: 30px;
+			}
+			.questions .btn-with-border {
+			  width: 602px;
+			}
+
 			.inputs-textarea {
 			  flex-direction: column;  
 			}
@@ -827,6 +866,64 @@ section {
 			.textarea {
 				height: 250px;
 			}
+			
+			.footer-nav {
+				display: none;
+			}
+			.line {
+				display: none;
+			}
+			/*______________!______________*/
+			.rev-txt {
+		    font-size: 30px;
+			}
+			.rev-head {
+		    font-size: 36px;
+		    margin-bottom: 30px;
+			}
+			.reviews-slide {
+				height: 340px;
+			}
+			.sprite3-right-rev, .sprite3-left-rev {
+				top: 145px;
+			}
+			.bottom-txt {
+			  font-size: 56px;
+			}
+			.section-title {
+			  font-size: 46px;
+			}
+			.contacts-block-item-txt {
+			  font-size: 30px;
+			}
+			.contact-form-txt {
+			  font-size: 34px;
+			}
+			.input, .textarea {
+			  font-size: 30px;
+			}
+			/*.head-title-block {
+			  bottom: 15px;
+			  left: 500px;
+			  padding: 40px 50px;
+			  width: 500px;
+			}*/
+			.corinthia-txt {
+				font-size: 70px;
+			}
+			.btn {
+			  width: 602px;
+			  padding: 30px 43px;
+			  font-size: 32px;
+			}
+			.btn-with-border {
+				font-size: 32px;
+				padding: 30px 43px;
+			}
+			.welcome-list {
+		    font-size: 34px;
+		  }
+			/*______________!______________*/
 				@media only screen and (max-width: 860px) {
 					.container {
 				    width: inherit;

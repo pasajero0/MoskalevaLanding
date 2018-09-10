@@ -1,9 +1,9 @@
 $(document).ready(function(){
 	//--------------------------------------------------- menu scroll
-		
+	let WW = $(window).width();
+
 	$(window).scroll(function(){
 		const ST = $(this).scrollTop();
-		const WW = $(window).width();
 		// console.log(ST);
 		// console.log(WW);
 		if (ST >= 5250 && WW >= 1070){
@@ -31,17 +31,57 @@ $(document).ready(function(){
 
 	//--------------------------------------------------- slider
 
-	$('.certificates-slider').slick({
-		slidesToShow: 1,
-  	slidesToScroll: 1,
-  	autoplaySpeed: 2000,
-		infinite: true,
-		speed: 1000,
-		autoplay: true,
-	 	variableWidth: false,
-		nextArrow: '<i class="sprite3 sprite3-right-cert"></i>',
-		prevArrow: '<i class="sprite3 sprite3-left-cenrt"></i>',
-	});	
+		// let slidesShowScroll;
+
+		if (WW <= 1100) {
+			 	$('.certificates-slider').slick({
+				slidesToShow: 1,
+			  slidesToScroll: 1,
+			  autoplaySpeed: 2000,
+				infinite: true,
+				speed: 1000,
+				autoplay: true,
+			 	variableWidth: false,
+				nextArrow: '<i class="sprite3 sprite3-right-cert"></i>',
+				prevArrow: '<i class="sprite3 sprite3-left-cenrt"></i>',
+			});	
+		} else if (WW > 1100 && WW <= 1600) {
+				$('.certificates-slider').slick({
+				slidesToShow: 2,
+			  slidesToScroll: 2,
+			  autoplaySpeed: 2000,
+				infinite: true,
+				speed: 1000,
+				autoplay: true,
+			 	variableWidth: false,
+				nextArrow: '<i class="sprite3 sprite3-right-cert"></i>',
+				prevArrow: '<i class="sprite3 sprite3-left-cenrt"></i>',
+			});	 
+		} else {
+				$('.certificates-slider').slick({
+				slidesToShow: 3,
+			  slidesToScroll: 3,
+			  autoplaySpeed: 2000,
+				infinite: true,
+				speed: 1000,
+				autoplay: true,
+			 	variableWidth: false,
+				nextArrow: '<i class="sprite3 sprite3-right-cert"></i>',
+				prevArrow: '<i class="sprite3 sprite3-left-cenrt"></i>',
+			});	
+		}
+
+	// $('.certificates-slider').slick({
+	// 	slidesToShow: 3,
+	//   slidesToScroll: 3,
+	//   autoplaySpeed: 2000,
+	// 	infinite: true,
+	// 	speed: 1000,
+	// 	autoplay: true,
+	//  	variableWidth: false,
+	// 	nextArrow: '<i class="sprite3 sprite3-right-cert"></i>',
+	// 	prevArrow: '<i class="sprite3 sprite3-left-cenrt"></i>',
+	// });	
 
 	$('.reviews-slider').slick({
 		slidesToShow: 1,
